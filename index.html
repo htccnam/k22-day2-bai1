@@ -37,6 +37,9 @@
             td {
                 border: 2px solid black;
             }
+            chart {
+                overflow-x: auto;
+            }
         </style>
     </head>
 
@@ -192,13 +195,14 @@ const newMessages = socketMessages.difference(cachedMessages);
         <h2>Promise.try() và async/await patterns nâng cao</h2>
         <p>Đây là tính năng mình mong nhất trong ES2025. Vấn đề cũ:</p>
         <pre>
-// Bug tiềm ẩn: nếu getUser() throw sync, lỗi không bị catch!
+<code class="language-javascript">
+    // Bug tiềm ẩn: nếu getUser() throw sync, lỗi không bị catch!
 async function loadProfile(id) {
   return getUser(id) // sync function, throw không bị catch bởi .catch()
     .then(user => fetchDetails(user));
 }
-</pre
-        >
+</code>
+</pre>
         <p>Promise.try() fix đúng điểm này:</p>
         <pre>
 <code class="language-javascript">
@@ -403,7 +407,7 @@ function ChatApp() {
                 >Tải file demo Realtime Dashboard</a
             >
         </p>
-        <pre>
+        <pre class="chart">
                 WebSocket server
                     ↓
                 Zustand store (ES2025 Promise.try + Set dedup)
