@@ -8,23 +8,58 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css"
         />
+        <style>
+            img {
+                max-width: 100%;
+            }
+            .avatar {
+                max-width: 20%;
+            }
+            .avatar > figcaption {
+                display: none;
+            }
+            .avatar-zone {
+                display: flex;
+            }
+            a {
+                color: orange;
+            }
+            .user-name {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: black;
+                text-decoration: none;
+            }
+            table {
+                border-collapse: collapse; /* gộp viền các ô lại sát nhau */
+            }
+            th,
+            td {
+                border: 2px solid black;
+            }
+        </style>
     </head>
-    <style>
-        img {
-            max-width: 100%;
-        }
-        a {
-            color: #f05123;
-        }
-        table {
-            border: black solid 2px;
-        }
-    </style>
+
     <body>
         <h1>
             ES2025 JavaScript: Patterns và Libraries Hot Nhất Cho Developer Việt
             2026
         </h1>
+        <div class="avatar-zone">
+            <figure class="avatar">
+                <img
+                    src="https://files.f8.edu.vn/f8-prod/public-images/699181d60839d.png"
+                    alt="avatar image"
+                />
+                <figcaption>
+                    Ếch Trendy - tác giả của bài viết ES2025 JavaScript:
+                    Patterns và Libraries Hot Nhất Cho Developer Việt 2026
+                </figcaption>
+            </figure>
+            <a href="https://f8.edu.vn/@chuechvietblog" class="user-name"
+                >Ếch Trendy</a
+            >
+        </div>
+
         <h2>ES2025 ra mắt - cái gì thật sự vào spec?</h2>
         <p>
             Tháng 6/2025, TC39 chính thức công bố ECMAScript 2025 (ES16). Nếu
@@ -32,10 +67,12 @@
             operator hay Temporal API - nhưng cả hai vẫn chưa vào spec. Đừng để
             bị nhầm.
         </p>
-        <ul>
+        <p>
             Cái
             <strong>thật sự</strong>
             vào ES2025 gồm 6 nhóm tính năng:
+        </p>
+        <ul>
             <li>
                 <strong>Iterator Helpers</strong> - global Iterator object với
                 map, filter, take, drop
@@ -61,14 +98,16 @@
                 memory-sensitive workloads
             </li>
         </ul>
-        <img
-            src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_0_260323080636_69c0921c0cf292.71514803.png"
-            alt=""
-        />
-        <em>
-            ES2025 tập trung vào iterator, set, và async - không phải pipeline
-            operator như nhiều bài viết nhầm
-        </em>
+        <figure>
+            <img
+                src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_0_260323080636_69c0921c0cf292.71514803.png"
+                alt="image"
+            />
+            <figcaption>
+                ES2025 tập trung vào iterator, set, và async - không phải
+                pipeline operator như nhiều bài viết nhầm
+            </figcaption>
+        </figure>
 
         <p>
             Node.js 22+ và các browser Chrome/Firefox/Safari release sau tháng
@@ -114,14 +153,17 @@ const result = Iterator.from(apiData)
             item còn lại. Lodash chain cũng làm được điều này, nhưng giờ là
             native.
         </p>
-        <img
-            src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_1_260323080703_69c092375aabc3.16191064.png"
-            alt=""
-        />
-        <p>
-            Lazy evaluation: chỉ xử lý đúng số item cần thiết, tiết kiệm CPU và
-            memory đáng kể
-        </p>
+        <figure>
+            <img
+                src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_1_260323080703_69c092375aabc3.16191064.png"
+                alt="image"
+            />
+            <figcaption>
+                Lazy evaluation: chỉ xử lý đúng số item cần thiết, tiết kiệm CPU
+                và memory đáng kể
+            </figcaption>
+        </figure>
+
         <p>
             <strong>Set Methods</strong> thì đặc biệt hữu ích cho permission
             systems hoặc dedup realtime data:
@@ -191,14 +233,16 @@ for await (const update of streamDashboardData('/api/stream')) {
 </code>
 
         </pre>
-        <img
-            src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_2_260323080728_69c09250954f10.74211997.png"
-            alt=""
-        />
-        <p>
-            Promise.try + async generator = xử lý stream data không bị miss
-            error ở bất kỳ điểm nào
-        </p>
+        <figure>
+            <img
+                src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_2_260323080728_69c09250954f10.74211997.png"
+                alt="figure"
+            />
+            <figcaption>
+                Promise.try + async generator = xử lý stream data không bị miss
+                error ở bất kỳ điểm nào
+            </figcaption>
+        </figure>
         <p>
             <strong>Top-level await</strong> (ES2022 nhưng hay dùng chung với
             ES2025 patterns) cũng clean hơn khi kết hợp Set ops:
@@ -281,16 +325,21 @@ function ChatApp() {
 }
 </code>
 </pre>
-        <img
-            src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_3_260323080755_69c0926b837010.27943991.png"
-            alt=""
-        />
-        <em>
-            RxJS cho stream phức tạp, Zustand cho React app state - chọn đúng
-            tool cho đúng bài toán
-        </em>
-        <p>Bảng so sánh thực tế:</p>
+        <figure>
+            <img
+                src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_3_260323080755_69c0926b837010.27943991.png"
+                alt="image"
+            />
+            <figcaption>
+                RxJS cho stream phức tạp, Zustand cho React app state - chọn
+                đúng tool cho đúng bài toán
+            </figcaption>
+        </figure>
+
         <table>
+            <caption>
+                <p>Bảng so sánh thực tế:</p>
+            </caption>
             <thead>
                 <tr>
                     <th>Tiêu chí</th>
@@ -403,16 +452,18 @@ const useStockStore = create((set, get) => ({
                 </code>
 
             </pre>
-        <img
-            src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_4_260323080825_69c0928991e952.37228671.png"
-            alt=""
-        />
-        <p>
-            Zustand store kết hợp ES2025 Set union và Iterator Helpers - ít code
-            hơn, dễ đọc hơn
-        </p>
+        <figure>
+            <img
+                src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_4_260323080825_69c0928991e952.37228671.png"
+                alt=""
+            />
+            <figcaption>
+                Zustand store kết hợp ES2025 Set union và Iterator Helpers - ít
+                code hơn, dễ đọc hơn
+            </figcaption>
+        </figure>
+        <p>Pattern này cho phép bạn:</p>
         <ul>
-            Pattern này cho phép bạn:
             <li>
                 Không duplicate symbol khi user thêm subscription nhiều lần
                 (Set.union)
@@ -425,8 +476,8 @@ const useStockStore = create((set, get) => ({
                 (Iterator.take)
             </li>
         </ul>
+        <p>Bạn đã có đủ building blocks. Bước tiếp:</p>
         <ol>
-            Bạn đã có đủ building blocks. Bước tiếp:
             <li>
                 Cài Node.js 22+ hoặc bật Chrome mới nhất để test native (không
                 cần polyfill)
