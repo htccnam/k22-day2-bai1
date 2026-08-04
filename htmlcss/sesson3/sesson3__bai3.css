@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+}
+.column1 {
+    flex: 1;
+    margin: 1rem 3rem;
+}
+.column2 {
+    flex: 1;
+    margin-right: 2rem;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form__input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+.form__button {
+    display: block;
+    width: 5rem;
+    border-radius: 5px;
+    border: 5px solid salmon;
+    background-color: salmon;
+}
