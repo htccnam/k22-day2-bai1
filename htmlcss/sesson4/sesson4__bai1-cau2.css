@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+}
+
+.row {
+    display: flex;
+}
+.column1 {
+    flex: 1;
+    background: olive;
+}
+.column2 {
+    flex: 3;
+    background: orange;
+}
+.column1__a-avatar {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid salmon;
+}
+.userInfor__div-row {
+    display: flex;
+}
