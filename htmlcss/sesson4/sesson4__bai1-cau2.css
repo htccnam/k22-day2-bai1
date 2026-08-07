@@ -1,24 +1,103 @@
 html {
     font-size: 62.5%;
 }
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 1.6rem;
+}
+p {
+    font-size: 1.3rem;
+}
 
 .row {
     display: flex;
 }
-.column1 {
+.profile__sidebar {
     flex: 1;
-    background: olive;
 }
 .column2 {
     flex: 3;
-    background: orange;
+    margin-right: 3rem;
 }
-.column1__a-avatar {
+
+/* profile__sidebar */
+.profile__sidebar__a-avatar {
     width: 30%;
     height: auto;
     border-radius: 50%;
     border: 3px solid salmon;
 }
-.userInfor__div-row {
+.profile__sidebar--h1-avatar {
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.profile__sidebar--profile-link {
+    text-decoration: none;
+    color: #666666;
+}
+.use-infor__div-row {
     display: flex;
+}
+.use-infor__div-row p {
+    margin: 1rem;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
+
+/* column2 */
+.course {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    border-radius: 1rem;
+}
+.course__khoahoc {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc((100% - 6rem) / 3);
+}
+.column2__a-avatar {
+    max-width: 100%;
+}
+.course__khoahoc--img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.course__div {
+    margin-top: 1rem;
+}
+.course__div--original-price {
+    text-decoration: line-through;
+}
+.course__div--discount-price {
+    color: red;
+}
+.course__div--last-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.course__div--last-row * {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc((100% - 2rem) / 3);
+    color: #666666;
+}
+.course__div--last-row a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.course__div--teacher-avatar {
+    max-width: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid orange;
 }

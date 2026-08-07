@@ -1,42 +1,276 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>bai1-cau2</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/be758ed6ae.js"
+            crossorigin="anonymous"
+        ></script>
         <link rel="stylesheet" href="../resetcss/reset.css" />
         <link rel="stylesheet" href="./sesson4__bai1-cau2.css" />
     </head>
     <body>
-        <div class="row">
-            <div class="column1">
-                <figure class="column1__figure-avatar">
+        <main>
+            <div class="row">
+                <div class="profile__sidebar">
                     <img
                         src="https://files.f8.edu.vn/f8-prod/user_photos/401867/663500698ef55.jpg"
                         alt="ảnh học viên f8"
-                        class="column1__a-avatar"
+                        class="profile__sidebar--a-avatar"
                     />
-                    <figcaption class="column1__figcaption-avatar">
-                        ảnh học viên f8
-                    </figcaption>
-                </figure>
-                <h1>Hoàng Hải Nam</h1>
-                <a href="https://f8.edu.vn/@namhoanghai4">@namhoanghai4</a>
-                <div class="userInfor">
-                    <div class="userInfor__div-row">
-                        <p>0 người theo dõi</p>
-                        <p>0 đang theo dõi</p>
+                    <h1 class="profile__sidebar--h1-avatar">Hoàng Hải Nam</h1>
+
+                    <a
+                        href="https://f8.edu.vn/@namhoanghai4"
+                        class="profile__sidebar--profile-link"
+                        >@namhoanghai4</a
+                    >
+                    <div class="use-infor">
+                        <div class="use-infor__div-row">
+                            <p>0 người theo dõi</p>
+                            <p>0 đang theo dõi</p>
+                        </div>
+                        <div class="use-infor__div-row">
+                            <p>7 ngày học liên tiếp</p>
+                            <p>Dài nhất: 9 ngày</p>
+                        </div>
+                        <div class="use-infor__div-row">
+                            <p>Tham gia F8 từ 2 năm trước</p>
+                        </div>
                     </div>
-                    <div class="userInfor__div-row">
-                        <p>7 ngày học liên tiếp</p>
-                        <p>Dài nhất: 9 ngày</p>
-                    </div>
-                    <div class="userInfor__div-row">
-                        <p>Tham gia F8 từ 2 năm trước</p>
+                </div>
+
+                <!-- thông tin lịch sử hoạt động và khóa học -->
+                <div class="column2">
+                    <figure class="column2__figcaption-avatar">
+                        <img
+                            src="./status.png"
+                            alt="ảnh trạng thái"
+                            class="column2__a-status"
+                        />
+                        <figcaption>ảnh sơ đồ hoạt động</figcaption>
+                    </figure>
+                    <div class="course">
+                        <div class="course__khoahoc">
+                            <a href="https://htmlcss.f8.edu.vn/"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/courses/15/62f13d2424a47.png"
+                                    alt="ảnh khóa học html , css pro"
+                                    class="course__khoahoc--img"
+                            /></a>
+                            <div class="course__div">HTML CSS Pro</div>
+                            <div class="course__div">
+                                <span class="course__div--original-price">
+                                    2.500.000đ </span
+                                ><span class="course__div--discount-price"
+                                    >1.299.000đ</span
+                                >
+                            </div>
+                            <div class="course__div">
+                                <span
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i></span
+                                ><span>Chưa có đánh giá</span>
+                            </div>
+                            <div class="course__div course__div--last-row">
+                                <a href="https://f8.edu.vn/@sondangf8"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                                        alt="image"
+                                        class="course__div--teacher-avatar"
+                                    />Sơn Đặng</a
+                                >
+                                <span>
+                                    <i class="fa-brands fa-youtube"></i
+                                    >590</span
+                                ><span>
+                                    <i class="fa-solid fa-clock"></i
+                                    >116h50p</span
+                                >
+                            </div>
+                        </div>
+                        <div class="course__khoahoc">
+                            <a href="https://js.f8.edu.vn/"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/courses/19/66aa28194b52b.png"
+                                    alt="ảnh khóa học JavaScript Pro"
+                                    class="course__khoahoc--img"
+                            /></a>
+                            <div class="course__div">HTML CSS Pro</div>
+                            <div class="course__div">
+                                <span class="course__div--original-price">
+                                    2.500.000đ </span
+                                ><span class="course__div--discount-price"
+                                    >1.299.000đ</span
+                                >
+                            </div>
+                            <div class="course__div">
+                                <span
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i></span
+                                ><span>Chưa có đánh giá</span>
+                            </div>
+                            <div class="course__div course__div--last-row">
+                                <a href="https://f8.edu.vn/@sondangf8"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                                        alt="image"
+                                        class="course__div--teacher-avatar"
+                                    />Sơn Đặng</a
+                                >
+                                <span>
+                                    <i class="fa-brands fa-youtube"></i
+                                    >590</span
+                                ><span>
+                                    <i class="fa-solid fa-clock"></i
+                                    >116h50p</span
+                                >
+                            </div>
+                        </div>
+                        <!-- khóa 3 -->
+                        <div class="course__khoahoc">
+                            <a href="https://sass.f8.edu.vn/"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/courses/27/64e184ee5d7a2.png"
+                                    alt="ảnh khóa học ngôn ngữ Sass"
+                                    class="course__khoahoc--img"
+                            /></a>
+                            <div class="course__div">HTML CSS Pro</div>
+                            <div class="course__div">
+                                <span class="course__div--original-price">
+                                    2.500.000đ </span
+                                ><span class="course__div--discount-price"
+                                    >1.299.000đ</span
+                                >
+                            </div>
+                            <div class="course__div">
+                                <span
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i></span
+                                ><span>Chưa có đánh giá</span>
+                            </div>
+                            <div class="course__div course__div--last-row">
+                                <a href="https://f8.edu.vn/@sondangf8"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                                        alt="image"
+                                        class="course__div--teacher-avatar"
+                                    />Sơn Đặng</a
+                                >
+                                <span>
+                                    <i class="fa-brands fa-youtube"></i
+                                    >590</span
+                                ><span>
+                                    <i class="fa-solid fa-clock"></i
+                                    >116h50p</span
+                                >
+                            </div>
+                        </div>
+                        <!-- khóa 4 -->
+                        <div class="course__khoahoc">
+                            <a href="https://fullstack.f8.edu.vn/"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/courses/31/67f4c93c28d4b.png"
+                                    alt="ảnh khóa học FullStack Online"
+                                    class="course__khoahoc--img"
+                            /></a>
+                            <div class="course__div">HTML CSS Pro</div>
+                            <div class="course__div">
+                                <span class="course__div--original-price">
+                                    2.500.000đ </span
+                                ><span class="course__div--discount-price"
+                                    >1.299.000đ</span
+                                >
+                            </div>
+                            <div class="course__div">
+                                <span
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i></span
+                                ><span>Chưa có đánh giá</span>
+                            </div>
+                            <div class="course__div course__div--last-row">
+                                <a href="https://f8.edu.vn/@sondangf8"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                                        alt="image"
+                                        class="course__div--teacher-avatar"
+                                    />Sơn Đặng</a
+                                >
+                                <span>
+                                    <i class="fa-brands fa-youtube"></i
+                                    >590</span
+                                ><span>
+                                    <i class="fa-solid fa-clock"></i
+                                    >116h50p</span
+                                >
+                            </div>
+                        </div>
+                        <!-- khóa 5 -->
+                        <div class="course__khoahoc">
+                            <a
+                                href="https://f8.edu.vn/learning/lap-trinh-c-co-ban-toi-nang-cao"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png"
+                                    alt="ảnh khóa học C++"
+                                    class="course__khoahoc--img"
+                            /></a>
+                            <div class="course__div">HTML CSS Pro</div>
+                            <div class="course__div">
+                                <span class="course__div--original-price">
+                                    2.500.000đ </span
+                                ><span class="course__div--discount-price"
+                                    >1.299.000đ</span
+                                >
+                            </div>
+                            <div class="course__div">
+                                <span
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i
+                                    ><i class="fa-regular fa-star"></i></span
+                                ><span>Chưa có đánh giá</span>
+                            </div>
+                            <div class="course__div course__div--last-row">
+                                <a href="https://f8.edu.vn/@sondangf8"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                                        alt="image"
+                                        class="course__div--teacher-avatar"
+                                    />Sơn Đặng</a
+                                >
+                                <span>
+                                    <i class="fa-brands fa-youtube"></i
+                                    >590</span
+                                ><span>
+                                    <i class="fa-solid fa-clock"></i
+                                    >116h50p</span
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="column2"></div>
-        </div>
+        </main>
     </body>
 </html>
