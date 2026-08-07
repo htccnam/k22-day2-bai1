@@ -72,7 +72,7 @@ p {
     border-radius: 1rem 1rem 0 0;
 }
 .course__div {
-    margin-top: 1rem;
+    margin: 0 3rem 3rem 0;
 }
 .course__div--original-price {
     text-decoration: line-through;
