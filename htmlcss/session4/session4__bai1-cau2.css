@@ -17,13 +17,13 @@ p {
     font-size: 1.3rem;
 }
 
-.row {
+.profile {
     display: flex;
 }
 .profile__sidebar {
     flex: 1;
 }
-.column2 {
+.profile__content {
     flex: 3;
     margin-right: 3rem;
 }
