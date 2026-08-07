@@ -29,7 +29,7 @@ p {
 }
 
 /* profile__sidebar */
-.profile__sidebar__a-avatar {
+.profile__sidebar--a-avatar {
     width: 30%;
     height: auto;
     border-radius: 50%;

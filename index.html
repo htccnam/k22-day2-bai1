@@ -1,19 +1,82 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>menu</title>
+        <title>Bài tập HTML & CSS</title>
         <link rel="stylesheet" href="menu.css" />
     </head>
     <body>
-        <div class="sesson3">
-            <p>bài tập buổi 3</p>
-            <a href="htmlcss/sesson2/sesson2-bai1.html">Bài 1 : câu 1</a><br />
-            <a href="htmlcss/sesson3/sesson3__bai1-cau2.html">Bài 1 : câu 2</a
-            ><br /><a href="htmlcss/sesson3/sesson3__bai1-cau3.html"
-                >Bài 1 : câu 3</a
-            >
-        </div>
+        <header class="site-header">
+            <div class="container">
+                <p class="site-header__label">Lộ trình tự học</p>
+                <h1 class="site-header__title">Bài tập HTML & CSS</h1>
+                <p class="site-header__description">
+                    Danh sách bài tập thực hành theo từng buổi học.
+                </p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="lesson" aria-labelledby="session-2-title">
+                <h2 id="session-2-title" class="lesson__title">Buổi 2</h2>
+
+                <div class="lesson__grid">
+                    <a
+                        class="exercise-card"
+                        href="htmlcss/session2/session2-bai1.html"
+                    >
+                        <span class="exercise-card__number">Bài 1</span>
+                        <h3 class="exercise-card__title">Bài tập buổi 2</h3>
+                        <span class="exercise-card__link">Mở bài →</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="lesson" aria-labelledby="session-3-title">
+                <h2 id="session-3-title" class="lesson__title">Buổi 3</h2>
+
+                <div class="lesson__grid">
+                    <a
+                        class="exercise-card"
+                        href="htmlcss/session3/session3__bai1-cau2.html"
+                    >
+                        <span class="exercise-card__number">Bài 1 · Câu 2</span>
+                        <h3 class="exercise-card__title">Bài thực hành</h3>
+                        <span class="exercise-card__link"
+                            >Mô tả: làm bài tập</span
+                        >
+                    </a>
+
+                    <a
+                        class="exercise-card"
+                        href="htmlcss/session3/session3__bai1-cau3.html"
+                    >
+                        <span class="exercise-card__number">Bài 1 · Câu 3</span>
+                        <h3 class="exercise-card__title">Bài thực hành</h3>
+                        <span class="exercise-card__link"
+                            >Mô tả: làm bài tập</span
+                        >
+                    </a>
+                </div>
+            </section>
+
+            <section class="lesson" aria-labelledby="session-4-title">
+                <h2 id="session-4-title" class="lesson__title">Buổi 4</h2>
+
+                <div class="lesson__grid">
+                    <a
+                        class="exercise-card"
+                        href="htmlcss/session4/session4__bai1-cau2.html"
+                    >
+                        <span class="exercise-card__number">Bài 1 · Câu 2</span>
+                        <h3 class="exercise-card__title">Trang hồ sơ F8</h3>
+                        <span class="exercise-card__link"
+                            >Mô tả: làm bài tập</span
+                        >
+                    </a>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
