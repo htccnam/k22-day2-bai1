@@ -63,6 +63,13 @@ p {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: calc((100% - 6rem) / 3);
+    background: #eceaea;
+    border-radius: 1rem;
+}
+.course__khoahoc:hover {
+    box-shadow: 1rem 1rem #d0cece;
+    translate: 0 -1rem;
+    transition-duration: 0.3s;
 }
 .column2__a-avatar {
     max-width: 100%;
@@ -72,7 +79,8 @@ p {
     border-radius: 1rem 1rem 0 0;
 }
 .course__div {
-    margin: 0 3rem 3rem 0;
+    margin: 0 3rem 3rem 1.5rem;
+    white-space: nowrap;
 }
 .course__div--original-price {
     text-decoration: line-through;
