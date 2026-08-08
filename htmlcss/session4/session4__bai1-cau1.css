@@ -1,0 +1,74 @@
+html {
+    font-size: 62.25%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.blog {
+    border: 0.1rem solid #9d9b9b;
+    border-radius: 1.5rem;
+    margin: 1.5rem;
+}
+.blog__img-author-avatar {
+    width: 2rem;
+    border: 0.2rem solid orange;
+    border-radius: 50%;
+}
+.blog__a-author-avatar {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*  content */
+/* left */
+.blog-content {
+    display: flex;
+    margin: 1.5rem;
+    justify-content: space-between;
+}
+.blog__title * {
+    margin-top: 1rem;
+}
+.blog__avatar {
+    margin: 1.5rem 0 0 1.5rem;
+}
+.blog__tag {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+}
+.blog__a-tag {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #dbdada;
+    border-radius: 1rem;
+    background: #dbdada;
+    padding: 0 1rem 0;
+}
+.blog__a-tag:hover {
+    color: rgb(161, 161, 161);
+    background: #f4f3f3;
+}
+.blog__tag span {
+    margin-left: 2rem;
+}
+
+/* right */
+.blog__title-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.blog__thumbnail {
+    width: 20rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
