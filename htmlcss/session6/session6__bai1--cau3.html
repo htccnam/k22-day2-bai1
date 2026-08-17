@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Trang Bài tập F8 ở trạng thái đang tải"
+        />
+        <title>Bài tập | F8</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="session6__bai1--cau3.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <a
+                class="site-header__brand"
+                href="../session5/session5__bai1.html"
+                aria-label="F8 - Trang chủ"
+            >
+                <span class="site-header__logo">F8</span>
+                <span class="site-header__brand-name"
+                    >Học Lập Trình Để Đi Làm</span
+                >
+            </a>
+
+            <form class="site-header__search" role="search">
+                <label class="visually-hidden" for="site-search"
+                    >Tìm kiếm trên F8</label
+                >
+                <i
+                    class="site-header__search-icon fa-solid fa-magnifying-glass"
+                    aria-hidden="true"
+                ></i>
+                <input
+                    class="site-header__search-input"
+                    id="site-search"
+                    type="search"
+                    placeholder="Tìm khóa học, bài tập, hỏi đáp..."
+                />
+            </form>
+
+            <div class="site-header__actions">
+                <button
+                    class="site-header__action"
+                    type="button"
+                    aria-label="Thông báo"
+                >
+                    <i class="fa-regular fa-bell" aria-hidden="true"></i
+                    ><span class="site-header__badge">3</span>
+                </button>
+                <button
+                    class="site-header__action"
+                    type="button"
+                    aria-label="Tin nhắn"
+                >
+                    <i
+                        class="fa-regular fa-comment-dots"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+                <button
+                    class="site-header__avatar"
+                    type="button"
+                    aria-label="Mở menu tài khoản"
+                >
+                    S
+                </button>
+            </div>
+        </header>
+
+        <div class="app-layout" id="top">
+            <aside class="site-sidebar" aria-label="Điều hướng chính">
+                <nav class="site-sidebar__navigation">
+                    <ul class="site-sidebar__list">
+                        <li class="site-sidebar__item">
+                            <a
+                                class="site-sidebar__link"
+                                href="../session5/session5__bai1.html"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-house"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Trang chủ</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#roadmap"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-road"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Lộ trình</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#articles"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-newspaper"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Bài viết</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#news"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-bullhorn"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Bản tin</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href=""
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-comments"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Hỏi đáp</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a
+                                class="site-sidebar__link site-sidebar__link--active"
+                                href="#top"
+                                aria-current="page"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-clipboard-list"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Bài tập</span
+                                ><span class="site-sidebar__badge">3</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <a class="site-sidebar__account" href="#footer"
+                    ><i class="fa-solid fa-user" aria-hidden="true"></i
+                    ><span>Tài khoản</span></a
+                >
+            </aside>
+
+            <main class="assignment-page">
+                <header class="assignment-page__header">
+                    <p class="assignment-page__eyebrow">F8 LEARNING</p>
+                    <h1 class="assignment-page__title">Bài tập</h1>
+                    <p class="assignment-page__description">
+                        Luyện tập thường xuyên để củng cố kiến thức và nâng cao
+                        kỹ năng lập trình của bạn.
+                    </p>
+                </header>
+
+                <section
+                    class="quick-filters"
+                    aria-label="Tìm kiếm và lọc bài tập"
+                >
+                    <form class="quick-filters__search-filter" role="search">
+                        <label class="visually-hidden" for="assignment-search"
+                            >Tìm bài tập theo tên</label
+                        >
+                        <i
+                            class="quick-filters__search-icon fa-solid fa-magnifying-glass"
+                            aria-hidden="true"
+                        ></i>
+                        <input
+                            class="quick-filters__search-input"
+                            id="assignment-search"
+                            type="search"
+                            placeholder="Tìm theo tên bài tập..."
+                            aria-label="Tìm bài tập theo tên"
+                        />
+                    </form>
+                    <div
+                        class="quick-filters__filters-row"
+                        role="group"
+                        aria-label="Bộ lọc nhanh"
+                    >
+                        <button
+                            class="quick-filters__button quick-filters__button--active"
+                            type="button"
+                        >
+                            Tất cả
+                        </button>
+                        <button class="quick-filters__button" type="button">
+                            Chưa hoàn thành
+                        </button>
+                        <button class="quick-filters__button" type="button">
+                            Đã hoàn thành
+                        </button>
+                    </div>
+                </section>
+
+                <section
+                    class="assignment-loading"
+                    aria-labelledby="assignment-loading-title"
+                    aria-busy="true"
+                >
+                    <div class="assignment-loading__content" role="status">
+                        <span
+                            class="assignment-loading__spinner"
+                            aria-hidden="true"
+                        ></span>
+                        <h2
+                            class="assignment-loading__title"
+                            id="assignment-loading-title"
+                        >
+                            Đang tải bài tập
+                        </h2>
+                        <p class="assignment-loading__description">
+                            Danh sách bài tập sẽ sẵn sàng trong giây lát.
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="site-footer" id="footer">
+            <div class="site-footer__content">
+                <a class="site-footer__brand" href="#top"
+                    ><span class="site-footer__logo">F8</span
+                    ><span>Học Lập Trình Để Đi Làm</span></a
+                >
+                <p class="site-footer__copyright">
+                    © 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
