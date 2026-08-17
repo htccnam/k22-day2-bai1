@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Bài tập xây dựng lại trang chủ F8" />
+        <title>F8 - Học lập trình để đi làm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="session5__bai1.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <a
+                class="site-header__brand"
+                href="#top"
+                aria-label="F8 - Trang chủ"
+            >
+                <span class="site-header__logo">F8</span>
+                <span class="site-header__brand-name"
+                    >Học Lập Trình Để Đi Làm</span
+                >
+            </a>
+
+            <form class="site-header__search" role="search">
+                <label class="visually-hidden" for="site-search"
+                    >Tìm kiếm</label
+                >
+                <i
+                    class="site-header__search-icon fa-solid fa-magnifying-glass"
+                    aria-hidden="true"
+                ></i>
+                <input
+                    class="site-header__search-input"
+                    id="site-search"
+                    type="search"
+                    placeholder="Tìm khóa học, bài viết, hỏi đáp..."
+                />
+            </form>
+
+            <div class="site-header__actions">
+                <button
+                    class="site-header__action"
+                    type="button"
+                    aria-label="Thông báo"
+                >
+                    <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                    <span class="site-header__notification-badge">3</span>
+                </button>
+                <button
+                    class="site-header__action"
+                    type="button"
+                    aria-label="Tin nhắn"
+                >
+                    <i
+                        class="fa-regular fa-comment-dots"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+                <button
+                    class="site-header__avatar"
+                    type="button"
+                    aria-label="Mở menu tài khoản"
+                >
+                    S
+                </button>
+            </div>
+        </header>
+
+        <div class="app-layout" id="top">
+            <aside class="site-sidebar" aria-label="Điều hướng chính">
+                <nav class="site-sidebar__navigation">
+                    <ul class="site-sidebar__list">
+                        <li class="site-sidebar__item">
+                            <a
+                                class="site-sidebar__link site-sidebar__link--active"
+                                href="#top"
+                                aria-current="page"
+                            >
+                                <i
+                                    class="site-sidebar__icon fa-solid fa-house"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#courses"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-road"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Lộ trình</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#articles"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-newspaper"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Bài viết</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a
+                                class="site-sidebar__link site-sidebar__link--news"
+                                href="#news"
+                                aria-label="Mở bản tin"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-bullhorn"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Bản tin</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#videos"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-comments"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Hỏi đáp</span></a
+                            >
+                        </li>
+                        <li class="site-sidebar__item">
+                            <a class="site-sidebar__link" href="#courses"
+                                ><i
+                                    class="site-sidebar__icon fa-solid fa-clipboard-list"
+                                    aria-hidden="true"
+                                ></i
+                                ><span>Bài tập</span
+                                ><span class="site-sidebar__badge">3</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="home-page">
+                <section
+                    class="continue-learning"
+                    aria-label="Khóa học đang học"
+                >
+                    <span
+                        class="continue-learning__progress"
+                        role="progressbar"
+                        aria-valuenow="2"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-label="Tiến độ khóa học: 2 phần trăm"
+                        >2%</span
+                    >
+                    <div class="continue-learning__details">
+                        <strong class="continue-learning__course"
+                            >Lập trình C++ cơ bản, nâng cao</strong
+                        >
+                        <p class="continue-learning__meta">
+                            Bài tiếp: 2.2 Biến (variable) là gì?
+                            <span aria-hidden="true">•</span> 0/5 khóa học
+                            <span aria-hidden="true">•</span> Chuỗi 18 ngày
+                        </p>
+                    </div>
+                    <a
+                        class="button button--primary continue-learning__button"
+                        href="#courses"
+                        >Tiếp tục học</a
+                    >
+                </section>
+
+                <section
+                    class="story-rail"
+                    id="news"
+                    aria-labelledby="story-heading"
+                >
+                    <h1 class="story-rail__heading" id="story-heading">Tin</h1>
+                    <div class="story-rail__track">
+                        <button
+                            class="story-rail__item story-rail__item--create"
+                            type="button"
+                        >
+                            <span
+                                class="story-rail__thumbnail story-rail__thumbnail--create"
+                                ><i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <span class="story-rail__label">Tạo tin</span>
+                        </button>
+                        <button class="story-rail__item" type="button">
+                            <span class="story-rail__thumbnail"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/streamable-videos/2677/0/6a75b345c7e52.jpg"
+                                    alt="Tin của Nga Trần Phương" /><span
+                                    class="story-rail__avatar"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/6a45c8c490545.jpg"
+                                        alt="" /></span
+                            ></span>
+                            <span class="story-rail__label"
+                                >Nga Trần…
+                                <i
+                                    class="fa-solid fa-circle-check"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                        </button>
+                        <button class="story-rail__item" type="button">
+                            <span class="story-rail__thumbnail"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/streamable-videos/2655/0/6a6c789a08450.jpg"
+                                    alt="Tin của Mỹ Anh Đỗ" /><span
+                                    class="story-rail__avatar"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/69fef6725960f.jpg"
+                                        alt="" /></span
+                            ></span>
+                            <span class="story-rail__label"
+                                >Mỹ Anh Đỗ
+                                <i
+                                    class="fa-solid fa-circle-check"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                        </button>
+                        <button class="story-rail__item" type="button">
+                            <span class="story-rail__thumbnail"
+                                ><img
+                                    src="https://files.f8.edu.vn/f8-prod/streamable-videos/2330/0/69ef3705cbb73.jpg"
+                                    alt="Tin của Tây Du Code" /><span
+                                    class="story-rail__avatar"
+                                    ><img
+                                        src="https://files.f8.edu.vn/f8-prod/avatars/69e86df884a44.png"
+                                        alt="" /></span
+                            ></span>
+                            <span class="story-rail__label"
+                                >Tây Du Code
+                                <i
+                                    class="fa-solid fa-circle-check"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="hero-banner" aria-label="F8 Career Program">
+                    <div class="hero-banner__content">
+                        <p class="hero-banner__eyebrow">F8 CAREER PROGRAM</p>
+                        <h2 class="hero-banner__title">
+                            Học lập trình để<br />đi làm
+                        </h2>
+                        <p class="hero-banner__description">
+                            Khóa học bài bản, thực chiến. Giúp bạn tự tin chinh
+                            phục sự nghiệp lập trình.
+                        </p>
+                        <a class="button button--light" href="#courses"
+                            >Khám phá ngay</a
+                        >
+                    </div>
+                    <div class="hero-banner__visual" aria-hidden="true">
+                        <div class="hero-banner__code-window">
+                            <span class="hero-banner__window-dot"></span
+                            ><span class="hero-banner__window-dot"></span
+                            ><span class="hero-banner__window-dot"></span
+                            ><code
+                                >&lt;hello /&gt;<br /><em
+                                    >code your future</em
+                                ></code
+                            >
+                        </div>
+                        <span
+                            class="hero-banner__orb hero-banner__orb--large"
+                        ></span
+                        ><span
+                            class="hero-banner__orb hero-banner__orb--small"
+                        ></span
+                        ><i class="hero-banner__code-icon fa-solid fa-code"></i>
+                    </div>
+                </section>
+
+                <section
+                    class="content-section"
+                    id="courses"
+                    aria-labelledby="courses-heading"
+                >
+                    <div class="content-section__header">
+                        <div>
+                            <p class="content-section__eyebrow">HỌC CÙNG F8</p>
+                            <h2
+                                class="content-section__heading"
+                                id="courses-heading"
+                            >
+                                Dành cho bạn
+                            </h2>
+                        </div>
+                        <a class="content-section__more" href="#footer"
+                            >Xem tất cả
+                            <i
+                                class="fa-solid fa-chevron-right"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="course-grid">
+                        <article class="course-card">
+                            <a
+                                class="course-card__thumbnail course-card__thumbnail--javascript"
+                                href="#footer"
+                                aria-label="Lập Trình JavaScript Cơ Bản"
+                                ><span>JavaScript</span
+                                ><i
+                                    class="fa-brands fa-js"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                            <div class="course-card__body">
+                                <h3 class="course-card__title">
+                                    <a href="#footer"
+                                        >Lập Trình JavaScript Cơ Bản</a
+                                    >
+                                </h3>
+                                <p class="course-card__price">Miễn phí</p>
+                                <p class="course-card__meta">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        aria-hidden="true"
+                                    ></i>
+                                    4.9 (700) <span>•</span> 155.840 học viên
+                                </p>
+                            </div>
+                        </article>
+                        <article class="course-card">
+                            <a
+                                class="course-card__thumbnail course-card__thumbnail--html"
+                                href="#footer"
+                                aria-label="HTML CSS từ Zero đến Hero"
+                                ><span>HTML<br />&amp; CSS</span
+                                ><i
+                                    class="fa-brands fa-html5"
+                                    aria-hidden="true"
+                                ></i
+                                ><b class="course-card__badge">Mới</b></a
+                            >
+                            <div class="course-card__body">
+                                <h3 class="course-card__title">
+                                    <a href="#footer"
+                                        >HTML CSS từ Zero đến Hero</a
+                                    >
+                                </h3>
+                                <p class="course-card__price">Miễn phí</p>
+                                <p class="course-card__meta">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        aria-hidden="true"
+                                    ></i>
+                                    4.9 (591) <span>•</span> 220.552 học viên
+                                </p>
+                            </div>
+                        </article>
+                        <article class="course-card">
+                            <a
+                                class="course-card__thumbnail course-card__thumbnail--react"
+                                href="#footer"
+                                aria-label="Xây Dựng Website với ReactJS"
+                                ><span>ReactJS</span
+                                ><i
+                                    class="fa-brands fa-react"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                            <div class="course-card__body">
+                                <h3 class="course-card__title">
+                                    <a href="#footer"
+                                        >Xây Dựng Website với ReactJS</a
+                                    >
+                                </h3>
+                                <p class="course-card__price">Miễn phí</p>
+                                <p class="course-card__meta">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        aria-hidden="true"
+                                    ></i>
+                                    4.8 (374) <span>•</span> 81.392 học viên
+                                </p>
+                            </div>
+                        </article>
+                        <article class="course-card">
+                            <a
+                                class="course-card__thumbnail course-card__thumbnail--pro"
+                                href="#footer"
+                                aria-label="HTML CSS Pro"
+                                ><span>HTML CSS<br />PRO</span
+                                ><i
+                                    class="fa-solid fa-crown"
+                                    aria-hidden="true"
+                                ></i
+                                ><b class="course-card__badge">Pro</b></a
+                            >
+                            <div class="course-card__body">
+                                <h3 class="course-card__title">
+                                    <a href="#footer">HTML CSS Pro</a>
+                                </h3>
+                                <p class="course-card__price">
+                                    1.299.000đ <del>2.500.000đ</del>
+                                </p>
+                                <p class="course-card__meta">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        aria-hidden="true"
+                                    ></i>
+                                    4.9 (417) <span>•</span> 590 bài học
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section
+                    class="content-section content-section--two-columns"
+                    id="articles"
+                    aria-labelledby="articles-heading"
+                >
+                    <div class="article-area">
+                        <div class="content-section__header">
+                            <div>
+                                <p class="content-section__eyebrow">
+                                    CHIA SẺ KIẾN THỨC
+                                </p>
+                                <h2
+                                    class="content-section__heading"
+                                    id="articles-heading"
+                                >
+                                    Bài viết nổi bật
+                                </h2>
+                            </div>
+                            <a class="content-section__more" href="#footer"
+                                >Xem tất cả
+                                <i
+                                    class="fa-solid fa-chevron-right"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </div>
+                        <div class="article-list">
+                            <article class="article-list__item">
+                                <span
+                                    class="article-list__avatar article-list__avatar--orange"
+                                    >S</span
+                                >
+                                <div class="article-list__content">
+                                    <h3 class="article-list__title">
+                                        <a href="#footer"
+                                            >Tổng hợp các sản phẩm của học viên
+                                            tại F8</a
+                                        >
+                                    </h3>
+                                    <p class="article-list__meta">
+                                        Sơn Đặng · 6 phút đọc
+                                    </p>
+                                </div>
+                                <span class="article-list__number">01</span>
+                            </article>
+                            <article class="article-list__item">
+                                <span
+                                    class="article-list__avatar article-list__avatar--green"
+                                    >M</span
+                                >
+                                <div class="article-list__content">
+                                    <h3 class="article-list__title">
+                                        <a href="#footer"
+                                            >Cách đưa code lên GitHub và tạo
+                                            GitHub Pages</a
+                                        >
+                                    </h3>
+                                    <p class="article-list__meta">
+                                        Minh Kha · 4 phút đọc
+                                    </p>
+                                </div>
+                                <span class="article-list__number">02</span>
+                            </article>
+                            <article class="article-list__item">
+                                <span
+                                    class="article-list__avatar article-list__avatar--purple"
+                                    >D</span
+                                >
+                                <div class="article-list__content">
+                                    <h3 class="article-list__title">
+                                        <a href="#footer"
+                                            >Các nguồn tài nguyên hữu ích cho
+                                            Front-end Developer</a
+                                        >
+                                    </h3>
+                                    <p class="article-list__meta">
+                                        Dương Vương · 2 phút đọc
+                                    </p>
+                                </div>
+                                <span class="article-list__number">03</span>
+                            </article>
+                        </div>
+                    </div>
+                    <aside class="community-card" aria-label="Cộng đồng F8">
+                        <i
+                            class="community-card__quote fa-solid fa-quote-left"
+                            aria-hidden="true"
+                        ></i>
+                        <h2 class="community-card__title">
+                            Học lập trình không khó, nếu bạn có một lộ trình
+                            đúng.
+                        </h2>
+                        <p class="community-card__description">
+                            Tham gia cộng đồng để nhận hỗ trợ mỗi ngày.
+                        </p>
+                        <a class="button button--primary" href="#footer"
+                            >Tham gia cộng đồng</a
+                        >
+                    </aside>
+                </section>
+
+                <section
+                    class="content-section"
+                    id="videos"
+                    aria-labelledby="videos-heading"
+                >
+                    <div class="content-section__header">
+                        <div>
+                            <p class="content-section__eyebrow">
+                                F8 TRÊN YOUTUBE
+                            </p>
+                            <h2
+                                class="content-section__heading"
+                                id="videos-heading"
+                            >
+                                Videos nổi bật
+                            </h2>
+                        </div>
+                        <a class="content-section__more" href="#footer"
+                            >Xem tất cả
+                            <i
+                                class="fa-solid fa-chevron-right"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="video-grid">
+                        <article class="video-card">
+                            <a
+                                class="video-card__thumbnail video-card__thumbnail--orange"
+                                href="#footer"
+                                aria-label="Xem video Bạn sẽ làm được gì sau khóa học?"
+                                ><span class="video-card__play"
+                                    ><i
+                                        class="fa-solid fa-play"
+                                        aria-hidden="true"
+                                    ></i></span
+                                ><time class="video-card__duration"
+                                    >03:15</time
+                                ></a
+                            >
+                            <h3 class="video-card__title">
+                                <a href="#footer"
+                                    >Bạn sẽ làm được gì sau khóa học?</a
+                                >
+                            </h3>
+                            <p class="video-card__meta">
+                                <i
+                                    class="fa-solid fa-eye"
+                                    aria-hidden="true"
+                                ></i>
+                                1.150.564 lượt xem
+                            </p>
+                        </article>
+                        <article class="video-card">
+                            <a
+                                class="video-card__thumbnail video-card__thumbnail--green"
+                                href="#footer"
+                                aria-label="Xem video Sinh viên IT đi thực tập cần biết gì?"
+                                ><span class="video-card__play"
+                                    ><i
+                                        class="fa-solid fa-play"
+                                        aria-hidden="true"
+                                    ></i></span
+                                ><time class="video-card__duration"
+                                    >34:51</time
+                                ></a
+                            >
+                            <h3 class="video-card__title">
+                                <a href="#footer"
+                                    >Sinh viên IT đi thực tập cần biết gì?</a
+                                >
+                            </h3>
+                            <p class="video-card__meta">
+                                <i
+                                    class="fa-solid fa-eye"
+                                    aria-hidden="true"
+                                ></i>
+                                266.180 lượt xem
+                            </p>
+                        </article>
+                        <article class="video-card">
+                            <a
+                                class="video-card__thumbnail video-card__thumbnail--purple"
+                                href="#footer"
+                                aria-label="Xem video Phương pháp học lập trình của Admin F8?"
+                                ><span class="video-card__play"
+                                    ><i
+                                        class="fa-solid fa-play"
+                                        aria-hidden="true"
+                                    ></i></span
+                                ><time class="video-card__duration"
+                                    >24:06</time
+                                ></a
+                            >
+                            <h3 class="video-card__title">
+                                <a href="#footer"
+                                    >Phương pháp học lập trình của Admin F8?</a
+                                >
+                            </h3>
+                            <p class="video-card__meta">
+                                <i
+                                    class="fa-solid fa-eye"
+                                    aria-hidden="true"
+                                ></i>
+                                132.199 lượt xem
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="site-footer" id="footer">
+            <div class="site-footer__grid">
+                <section class="site-footer__about">
+                    <a class="site-footer__brand" href="#top"
+                        ><span class="site-footer__logo">F8</span
+                        ><span>Học Lập Trình Để Đi Làm</span></a
+                    >
+                    <address class="site-footer__address">
+                        Điện thoại: 08 1919 8989<br />Email:
+                        contact@fullstack.edu.vn<br />Địa chỉ: Số 1, ngõ 41,
+                        Trần Duy Hưng, Hà Nội
+                    </address>
+                    <div class="site-footer__social">
+                        <a href="#top" aria-label="YouTube"
+                            ><i
+                                class="fa-brands fa-youtube"
+                                aria-hidden="true"
+                            ></i></a
+                        ><a href="#top" aria-label="Facebook"
+                            ><i
+                                class="fa-brands fa-facebook-f"
+                                aria-hidden="true"
+                            ></i></a
+                        ><a href="#top" aria-label="TikTok"
+                            ><i
+                                class="fa-brands fa-tiktok"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                </section>
+                <section class="site-footer__column">
+                    <h2 class="site-footer__heading">Về F8</h2>
+                    <a href="#top">Giới thiệu</a><a href="#top">Liên hệ</a
+                    ><a href="#top">Điều khoản &amp; Quy định</a
+                    ><a href="#top">Chính sách bảo mật</a>
+                </section>
+                <section class="site-footer__column">
+                    <h2 class="site-footer__heading">Hỗ trợ</h2>
+                    <a href="#top">Chính sách thanh toán</a
+                    ><a href="#top">Chính sách vận chuyển</a
+                    ><a href="#top">Chính sách kiểm hàng</a
+                    ><a href="#top">Quy định về giá</a>
+                </section>
+                <section class="site-footer__column">
+                    <h2 class="site-footer__heading">Công cụ</h2>
+                    <a href="#top">Tạo CV xin việc</a
+                    ><a href="#top">Rút gọn liên kết</a
+                    ><a href="#top">CSS Grid generator</a
+                    ><a href="#top">Snippet generator</a>
+                </section>
+            </div>
+            <p class="site-footer__copyright">
+                © 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.
+            </p>
+        </footer>
+    </body>
+</html>
